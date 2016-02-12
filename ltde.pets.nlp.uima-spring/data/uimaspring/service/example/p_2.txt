@@ -1,0 +1,28 @@
+Preface
+We are happy to present the papers to be discussed at the 2007 JCDL Workshop
+on “Foundations of Digital Libraries”. This workshop is the first one dedicated
+to this very fascinating theme, that has gained increasing interest in recent years,
+although attention to digital libraries (DLs) dates from many years ago.
+It is not surprising that DL researchers feel the need of foundations for the
+Digital Libraries field. The DL universe, in fact, has continued to grow in the last
+fifteen years and has become a very complex one, producing very heterogeneous
+models and systems. Now DL researchers are aware that foundations are urgent
+to avoid that the results of their work are difficult to confront and even harder
+to combine and reuse to produce enhanced outcomes.
+The papers that will be presented for discussion in this workshop aim to
+contribute to laying the foundations for digital libraries as a whole, as well as
+continuing the work on the definition of a Reference Model for Digital Libraries
+launched by the EU DELOS Network of Excellence on Digital Libraries. The
+common goal is to produce a reference framework wherein new results can be in-
+tegrated, compared, and discussed. With this view, the workshop gives particular
+attention to the modeling of three of the main aspects characterizing the Digital
+Library universe: Content, Architecture, and Quality, in order to contribute to
+the consolidation of these key concepts. In each of the sections dedicated to these
+arguments, a number of papers are offered, beginning with those dedicated to
+the motivations for and approaches to DL foundational work.
+Besides researchers, other important communities are interested in the essence
+of the DL fields, i.e., library users and library providers. We have no doubt that
+the results of this workshop also will give these communities a better understand-
+ing of the DL universe and the opportunity of reasoning about this universe and
+communicating with a common and well founded concept vocabulary.
+June 2007 Donatella Castelli and Edward A. Fox

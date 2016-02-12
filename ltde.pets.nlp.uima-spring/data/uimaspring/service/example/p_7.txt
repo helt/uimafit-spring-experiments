@@ -1,0 +1,123 @@
+some form of light that C’s eyes can take in. Rendering
+presupposes some knowledge on the image format.
+4. By interpreting the image, C figures out its meaning,
+i.e., the worlds in which the portrayed scene can occur.
+The fundamental divide in the above discussion is the sep-
+aration between rendering the object, the image in our case,
+and understanding the object. In other words, we regard the
+above process as the interpretation of the rendering of the
+bit stream. Preservation implies the ability to perform this
+process at any time. This leads to our informal definition of
+preservation as: the ability to perform the interpretation of
+the rendering of a bit stream at any time. Notice that this
+involves three steps: producing the bit stream, rendering the
+produced bit stream and understanding the rendered object.
+This results to a decomposition of the preservation task into
+sub-tasks, each corresponding to one preservation type.
+The first type, called bit preservation, refers to the abil-
+ity to produce a particular sequence of bits from a storage
+media at any time; this can be achieved using error correc-
+tion techniques, backups, RAID or mirrored disks, media
+refreshment and other technologies.
+The second type, called data preservation or object preser-
+vation, refers to the ability to render the produced bit stream
+and produce a meaningful output from it at any time. This
+is the focus of most current approaches to the problem.
+The third type, called information preservation, refers to
+the ability to understand the rendered object at any time,
+i.e., to be able to understand its content by understanding
+the terms, concepts or other information that appears in it,
+by placing it in its correct context etc. This is the tough-
+est type of preservation, and is often ignored by existing
+preservation approaches.
+We argue that a complete preservation system should han-
+dle all three preservation types. Notice that information
+preservation applies also for physical objects, whereas the
+other preservation types only make sense for the realm of
+digital objects. In what follows, we will not consider bit
+preservation; for some relevant discussion, refer, for exam-
+ple, to [17]. Our work focuses on information preservation,
+even though most of the approaches presented here can be
+easily amended to apply for data preservation as well.
+2.2 Preservation in Time and Space
+Normally, the process of digital preservation applies when
+the passage of time renders some digital object incompre-
+hensible by a particular DC. However, we can view preser-
+vation as the more general process of allowing an object to
+be understood by some target DC. The ability of the DC
+to understand an object may be hindered by several factors,
+including, but not limited to, the passage of time; the in-
+telligibility of a certain digital object may also depend, for
+example, on a number of software or hardware modules, or
+on some background knowledge regarding some particular
+domain, which may or may not be available to the target
+DC. This gives rise to two “preservation dimensions”: the
+space dimension and the time dimension.
+In the space dimension, the producer needs to formulate
+the created digital object is such a manner so that the vari-
+ous DCs that he is addressing his data for (which, in general,
+may have different background knowledge, rendering abili-
+ties, hardware, software etc) can understand it.
+The time dimension represents the evolution of the knowl-
+edge of the DC in time. Such evolution may be, e.g., due to
+some new discovery, in which case the changes are easy to
+capture, well-documented and noticeable. However, this is
+not always the case, as it is possible that the evolution could
+be due to slight changes in knowledge, jargon, terminology
+etc, which usually go by unnoticed, but accumulate through
+time. Thus, the knowledge of the DC should be checked
+at regular intervals, and, if changes are found, an explicit
+knowledge shift should be performed to guarantee preser-
+vation. This shift consists in the specification of the new
+knowledge of the DC (i.e., the currently used knowledge)
+and the change that resulted in this shift.
+In fact, both “preservation dimensions” can be essentially
+reduced to the following problem: given a digital object,
+carrying a particular meaning, format, etc, as well as a tar-
+get DC, with some given rendering abilities, software and
+hardware modules, background knowledge etc, determine
+the changes required upon the original digital object so that
+the DC can understand the meaning intended by the object’s
+original producer.
+Notice that this formulation makes no reference to the
+time element, so it avoids the problem of not knowing what
+a future DC will be like. This way, the preservation prob-
+lem becomes in many respects similar to a communication
+problem between two agents and its recursive character is
+eliminated: we only need to devise a way through which
+an agent can adequately amend a digital object so as to be
+understandable by another agent. Once we achieve this, by
+repeating this process once per agent (i.e., DC), the problem
+is solved in the space dimension. Moreover, by repeating this
+process once per agent (i.e., DC) evolution, the DC at time
+t can play the role of the producer, so as the next-generation
+DC (at time t + 1) will be able to correctly understand the
+meaning of the digital object, as it was understood by the
+DC at time t (which is hopefully identical to the meaning
+intended by the producer at time 0).
+2.3 Questions and Answers
+In order for preservation to be possible, it is generally
+necessary for the producer to include in the digital object a
+certain amount of information on how the object should be
+interpreted, as well as, possibly, a certain amount of redun-
+dancy that will help consumers decipher its meaning. One
+of the major problems that need to be resolved for preser-
+vation is to determine what this information is and how it
+should be formally represented.
+A related issue is which part of the digital object is worth
+preserving. For example, if the digital object is a text docu-
+ment, then it is composed of various information, including
+its content, format, fonts, pagination information, attached
+images or other objects, etc; depending on the context, we
+may be interested in only a part of this information. Thus,
+we argue that it is not usually necessary (or possible) to
+preserve the entire information carried by a digital object;
+instead, we could isolate and preserve the object’s most“use-
+ful” or “important” information.
+To formalize the above requirements, we will consider that
+a digital object is a set of questions (or properties) whose
+answers (or property values) will help the consumer under-
+stand the (interesting part of the) meaning of the object.
+Notice that this viewpoint is sufficiently general, as it allows
+us to include in the preserved digital object some, or all,
+Foundations of Digital Libraries 2

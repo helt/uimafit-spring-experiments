@@ -1,0 +1,120 @@
+– The set PC which is the set of closed formulas of
+the language L. Obviously PC ⊆ P . PC in effect
+splits P into two disjoints sets, namely the set of
+closed formulas (i.e., PC itself) and the other for-
+mulas called open formulas and denoted by PO;
+obviously PO = P \ PC . Closed formulas will
+be used to represent facts (e.g., in the theory T ),
+while open formulas represent queries (for Q).
+– A binary relation |= between elements of P (the
+inference relation of the logic).
+• T is a finite and consistent theory in L: T ⊆ PC .
+Each digital object is associated to a certain UCK U =
+〈L, T〉 and is defined as a pair D = 〈Q, ans 〉 where:
+• Q is a finite, non-empty set of queries in L: Q ⊆ PO.
+• ans is a function associating each query q ∈ Q with an
+answer, that is a set of tuples ~a of individuals in L.
+We impose a further requirement on ans , by asking that
+the answers, taken all together, do not break consistency.
+This means to ask the consistency of the theory: T ∪{q(~a) | q ∈
+Q and ~a ∈ ans(q)}.
+Notice that the structure D = 〈Q, ans 〉 contains all the
+questions and answers that were chosen for preservation (see
+subsection 2.3). Thus, the set of sentences: {q(~a) | q ∈
+Q, ~a ∈ ans(q)} is all the information required to enable
+the interpretation of the part of the digital object that was
+considered useful for preservation purposes.
+Since each preserved digital object is associated to a UCK,
+we can define the pair 〈U ,D〉, or equivalently the 4-tuple
+S = 〈L, T,Q, ans 〉, as the Information Preservation Struc-
+ture (IPS) of the digital object. The IPS contains all the
+information related to the preservation of the digital object,
+because it contains both the digital object itself (i.e., the
+questions and answers in D), as well as the description of
+the meaning of the symbols in D (i.e., the UCK U).
+4. PRESERVATION DYNAMICS
+4.1 Preliminary Discussion on the Dynamics
+As already mentioned, preservation comes into play when
+producer’s background knowledge is different from the re-
+spective consumer’s knowledge. Thus, using the terminol-
+ogy introduced so far, the problem of preservation can be
+defined as follows: given a digital object DO whose content
+(meaning) is understandable using some UCK UO , a differ-
+ent UCK UN , and a description of the differences (evolution)
+between UO and UN , find a digital object DN , whose content
+(meaning), understood using UN , is identical to the content
+(meaning) of DO , understood using UO.
+The first problem we have to face in the above process is
+the identification of the exact changes that led to the new
+UCK from the old. We argue that the complexity of the
+UCK structure implies that the changes might be so subtle
+(or so great) that no automated system (or human being)
+can determine them by just looking at UO and UN ; for ex-
+ample, it is possible that complex changes may overlap and
+“hide” the effects of each other from an external observer.
+Therefore, we will make the (reasonable) assumption that
+preservation takes place while there are still people (human
+experts) who are knowledgeable of both the new and the
+old UCK and have kept track and can pinpoint the exact
+changes that occurred during the UCK evolution.
+Given the detailed description of those changes, the pur-
+pose of preservation is to determine the changes to apply to
+the digital object DO, in order to get the new object, DN .
+Such changes should be calculated as a function of the old
+digital object (DO), the two UCKs (UO, UN ) and the UCK
+change specification. Notice that this viewpoint allows us to
+generalize any solutions found, because, once we have found
+how to preserve an object of some type (i.e., an object asso-
+ciated with some particular UCK) against some particular
+UCK evolution, we can apply the same solution (function)
+to all objects associated with the same UCK. For example,
+if we want to preserve a large number of images of the same
+format against format obsolescence, all we have to do is de-
+termine the correct transformation for one image; then, the
+same transformation can be applied to the other images.
+Our definition makes it clear that, in preservation, the
+exact syntactical formulation of a digital object is irrelevant;
+what we are interested in preserving is the meaning of the
+digital object, as derived from the associated UCK.
+A final note on the above definition is that it is not always
+desirable (or possible) to achieve perfect preservation; in
+some cases, the new DC language (LN) may be less expres-
+sive than the old one (LO) so the exact meaning of the dig-
+ital object may not be expressible using LN ; in other cases,
+part of the meaning of the original digital object may be
+inconsistent with our current background knowledge (TN ),
+so, by our definitions and constraints (subsection 3.2), this
+part should not be preserved.
+Combining the above ideas, we conclude that a solution to
+the problem of preservation should, first, determine a power-
+ful enough formal structure that can describe UCK evolution
+and, second, define a formal process that will determine the
+new digital object DN , as a function of the old (DO), the two
+UCKs (UO, UN ) and the UCK evolution specification. This
+function should be such that the meaning of the old digital
+object is preserved as much as possible, so we should for-
+mally define what constitutes “preservation of the meaning”
+as well.
+In the next subsection, we will present some examples that
+will lead us to some preliminary ideas towards resolving the
+above issues; a more concrete answer to the above concerns
+is part of our future work.
+4.2 Desired Properties and Examples
+Let us consider the example of the evolution of our sym-
+bolism from the Roman numerals (I, II, . . .) to the Arabic
+ones (1, 2, . . .). An informal description of this evolution
+could be something like: “the old symbol ‘I’ evolved to the
+new symbol ‘1’, the old symbol ‘II’ evolved to 2, . . . etc”.
+An immediate observation that can be made from this
+example is that the “language” used to describe the UCK
+evolution contains terms from both the old (e.g., ‘I’) and
+the new (e.g., ‘1’) UCK. Thus, any attempt for a formal
+description of the UCK evolution should be expressed in a
+language (i.e., UCK, say UE) that is at least as expressive
+as either of UO and UN .
+As a second example, let us consider a recent terminology
+change in the field of astronomy. In August, 2006, during
+a meeting in Prague, astronomers decided to change the
+definition of the term “Planet”; in addition, they introduced
+a new term, “Dwarf Planet” [1]. As a consequence of these
+Foundations of Digital Libraries 4

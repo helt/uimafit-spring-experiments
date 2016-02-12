@@ -1,0 +1,22 @@
+Table of Contents
+Foundations of Digital Libraries
+Some Preliminary Ideas Towards a Theory of Digital Preservation . . . . . . . 1
+Giorgos Flouris, Carlo Meghini
+Foundations of 3D Digital Libraries: Current Approaches and Urgent
+Research Challenges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Benjamin Bustos, Dieter W. Fellner, Sven Havemann, Daniel A.
+Keim, Dietmar Saupe, Tobias Schreck
+Epistemic Networks in Grib + Web 2.0 Digital Libraries . . . . . . . . . . . . . . . 13
+Martin Doerr, Dolores Iorizzo
+Leveraging on Associations a New Challenge for Digital Libraries . . . . . . . 21
+Martin Doerr, Carlo Meghini, Nicolas Spyratos
+Extending the 5S Digital Library (DL) Framework: From a Minimal
+DL towards a DL Reference Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Uma Murthy, Douglas Gorton, Ricardo Torres, Marcos Gonçalves,
+Edward A. Fox, Lois Delcambre
+The Age of the Digital Library . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+José Borbinha
+Towards a Reference Quality Model for Digital Libraries . . . . . . . . . . . . . . . 37
+Maristella Agosti, Nicola Ferro, Edward A. Fox, Marcos André
+Gonçalves, Barbara Lagoeiro
+Author Index . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43

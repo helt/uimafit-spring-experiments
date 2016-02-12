@@ -1,0 +1,120 @@
+of the information in the original object, as well as to in-
+clude additional, external to the original object, associated
+information that may be useful for preservation purposes.
+2.4 Relevant Questions and the OAIS Model
+Determining the information (i.e., questions) worth pre-
+serving for the object at hand is not an easy task; it depends
+on the object type, its content, legal issues as well as on the
+producer’s and consumer’s needs, among other things. A
+great aid in this task is provided by preservation models,
+such as the OAIS standard [3]. The role of such a model in
+this respect is to provide a methodological framework and
+a “best practices” approach towards the aim of determining
+the most important information related to a digital object.
+As an illustration, the categories of information that OAIS
+prescribes are the Content Information (which is in turn di-
+vided into Content Data and Representation Information)
+and the Preservation Description Information (which is in
+turn divided into Provenance, Reference, Context and Fix-
+ity); the Representation Information is further divided into
+Structural Information and Semantic Information (see [3]
+for details). Each of those types of information could be
+modeled as questions about the object.
+3. PRESERVATION STATICS
+3.1 Required Model Properties
+Before performing any preservation activity, we need to
+formalize a way to represent a digital object as a set of
+questions and answers. These should be expressed in some
+language, let’s call it L, which will formally determine the
+syntactical and semantical rules that can be used for formu-
+lating such questions and answers.
+We will define L to be a formal language of a logical na-
+ture. There are various arguments in favor of this choice.
+First, L has to be formal, like logics are, otherwise no scien-
+tific theory of preservation can be developed; second, it must
+be able to express knowledge, and formal logic has been de-
+veloped for exactly this purpose; third, it must be suitable
+to capture question-answering, and the inference relation of
+mathematical logic allows precisely that; and, finally, logic
+is a very well studied field of science, offering a very rich set
+of results from which to draw.
+There is an overwhelming array of mathematical logics we
+could use; at this stage, we do not embrace any of them, be-
+cause this is not necessary for developing a theory of preser-
+vation. The only assumptions made about L is that it allows
+us to state queries by talking about otherwise unspecified in-
+dividuals and that it comes with a formal semantics and an
+associated inference relation |=.
+Informally, L can be viewed as the language which must
+be “spoken” (understood) by someone in order to be able
+to understand the (questions and answers related to the)
+digital object under question. In the process of “reading”
+a digital object (say a text document), we are often able to
+draw conclusions that are not direct consequences of the doc-
+ument’s content, but are partly based on some background
+or commonsense knowledge. Such background knowledge is
+necessary for the correct understanding of a digital object,
+so L should be coupled with some domain knowledge, rep-
+resented by a logical theory T , which is expressed in terms
+of the language L. Following intuition, T will be assumed
+finite and consistent.
+Notice that a digital object is nothing more than a bunch
+of symbols unless coupled with some formal structure that
+provides the semantics to these symbols. This formal struc-
+ture is the pair 〈L, T 〉 which allows us to understand the
+“meaning” of a digital object; this pair will be called the
+Underlying Community Knowledge (UCK) of the digital ob-
+ject and each digital object will be considered to be asso-
+ciated to a single UCK, which provides the framework for
+understanding it.
+Notice that the content of the UCK depends on the con-
+text. For example, if we are interested in data preservation,
+the UCK would be a formal description of the underlying
+format of the digital object; if we are interested in informa-
+tion preservation, the UCK would be a formal description of
+how the rendered object should be interpreted. Moreover,
+both the producer and the consumer have a UCK of their
+own; if this UCK is the same, they can both understand the
+digital object, and no preservation is necessary. Problems
+emerge when the UCKs of the producer and the consumer
+are different, in which case a digital object that carries a
+particular meaning for the producer may carry a totally dif-
+ferent meaning for the consumer, or, more likely, be totally
+unreadable; this is where preservation comes into play.
+As mentioned above, L allows the statement of queries;
+such queries will be used to formalize questions. Similarly,
+the individuals being the answers to such queries will be
+used to formalize the answers to such questions. Answers
+to questions should normally encode genuine information
+about the digital object, in the sense that this information
+is not implicit in the underlying theory T ; however, we can
+imagine situations where this is not necessarily the case. On
+the other hand, answers cannot contradict our knowledge
+(i.e., T ). Finally, all answers are assumed to be given by a
+knowledgeable person, which could be either the producer
+himself or some other person who can understand the digital
+object well enough to provide information on it.
+3.2 Formal Embodiment of our Requirements
+We now have all the ingredients we need to fulfill our
+goal of determining a formal model for the statics of digital
+preservation. As mentioned above, such a model should con-
+tain a UCK (consisting of a formal language, L and a logical
+theory T from L), as well as a digital object (consisting of
+a set of queries from L, say Q, and a set of answers to each
+such query, formalized using a function, say ans).
+More formally, we define theUnderlying Community Knowl-
+edge (or UCK) as a pair U = 〈L, T〉, where:
+• L is a logical language, or, more formally, a tuple
+L = 〈LL ,V,VI ,P,PC , |=〉, consisting of the following
+elements:
+– The set of logical symbols of the language, de-
+noted by LL.
+– The vocabulary V, which is a set of symbols.
+– A set VI , which is the subset of V that contains
+the individuals of the language, defined as all the
+elements of the vocabulary V that can be pro-
+duced as answers to queries (VI ⊆ V).
+– A set of well-formed formulas P , which is a non-
+empty set containing all the formulas that are al-
+lowed in L.
+Foundations of Digital Libraries 3

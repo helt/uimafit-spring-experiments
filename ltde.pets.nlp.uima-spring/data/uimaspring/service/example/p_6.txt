@@ -1,0 +1,103 @@
+Some Preliminary Ideas Towards
+a Theory of Digital Preservation
+Giorgos Flouris
+ISTI-CNR
+Via Giuseppe Moruzzi, 1
+56124, Pisa PI Toscana, Italy
+flouris@isti.cnr.it
+Carlo Meghini
+ISTI-CNR
+Via Giuseppe Moruzzi, 1
+56124, Pisa PI Toscana, Italy
+meghini@isti.cnr.it
+ABSTRACT
+The problem of digital preservation is one of the most chal-
+lenging research problems faced by the community of digital
+libraries today, receiving growing interest by researchers and
+practitioners alike. One of the major gaps in the related re-
+search is the lack of a general agreement on a formal model
+to describe the problem or on a formal description of the
+required properties of a good solution to the problem. This
+work aims to fill this gap by presenting a number of ideas
+towards a formal, mathematical, logic-based description of
+preservation as a scientific discipline, to the end of deriving
+a methodology resting on solid theoretical grounds. We will
+present and justify a number of desired properties of such
+a formalism and introduce a model that handles the static
+aspects of the problem; some ideas related to the dynamics
+of preservation will be presented as well.
+1. INTRODUCTION
+The rapid obsolescence of large volumes of digital (es-
+pecially “born-digital”) data is one of the most challenging
+problems faced by modern archivists. This problem is com-
+monly referred to as the problem of digital preservation [10,
+15] and deals with the problem of retaining the meaning of
+a digital object (file, image, database, document, etc) un-
+altered for an evolving community of readers. Such readers
+are usually referred to as the Designated Community (DC)
+of the digital object [3, 12].
+The problem of digital preservation is not fully understood
+to date; even though there is a number of ongoing efforts
+on the practical and methodological aspects of preservation
+(e.g., [5, 13, 14]), there are very few efforts in the direction
+of a formal description of the problem [4]. The introduction
+of such a formal description would in many ways contribute
+to the research field of digital preservation. For example,
+a formal theory could allow the development (and proof)
+of impossibility and existential results: given the inherent
+difficulties associated with the problem, we intuitively ex-
+pect some limitations on what types of digital objects can
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for profit or commercial advantage and that copies
+bear this notice and the full citation on the first page. To copy otherwise, to
+republish, to post on servers or to redistribute to lists, requires prior specific
+permission and/or a fee.
+First International Workshop on “Digital Libraries Foundations” Vancou-
+ver, British Columbia, Canada, June 23, 2007
+.
+be preserved; we also expect certain types of DC evolution
+to be such that no preservation is possible. In addition, a
+formal theory could allow the grounding of existing (and fu-
+ture) preservation methods upon a common formalism for
+comparison, and could result to a set of formal desirable
+properties for evaluating such methodologies [8].
+Motivated by the above considerations, we propose certain
+definitions which are part of a larger ongoing effort towards
+the development of a formal, mathematical, logic-based de-
+scription of preservation as a scientific discipline, to the end
+of deriving a methodology resting on solid grounds.
+We begin with a general discussion on digital preservation,
+addressing some general properties of the problem (section
+2). This discussion includes some thoughts on the relation-
+ship of our ideas with existing standards, such as OAIS [3];
+establishing such a relationship is necessary, as it would
+eventually allow the connection of this work with existing
+efforts (such as the CASPAR project [2]). Following that,
+we introduce a formalism that handles the static aspects of
+the problem (section 3) and present some thoughts related
+to the dynamic aspects of the problem (section 4).
+2. DISCUSSION ON PRESERVATION
+2.1 Types of Preservation
+As already mentioned, digital preservation refers to the
+problem of retaining the meaning of a digital object unal-
+tered for an evolving DC. Let us suppose that the digital
+object under question is an image, say I , created by a par-
+ticular individual (called the producer [12]), say P ; more-
+over, consider a particular member of the DC (called the
+consumer [12]), say C.
+The ultimate goal of preservation is to ensure that C un-
+derstands I despite the many changes that can intervene as
+time passes by. Understanding in this context implies ac-
+cessing, of course, but access alone is (usually) not enough.
+Below, we sketch the general steps required for C to un-
+derstand I ; notice that most of these steps require the use
+of some artificial agent (software program, hardware device
+etc) to apply the relevant transformation:
+1. The original input is the physical storage (on some
+form of long-term storage media) of the sequence of
+bits which encodes the image I in some format.
+2. By reading these bits from the storage media, C ob-
+tains a sequence of bit values representing the image.
+3. By rendering these bits, C obtains an image that is
+Foundations of Digital Libraries 1

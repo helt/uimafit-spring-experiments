@@ -1,0 +1,16 @@
+Organization
+First International Workshop on “Digital Libraries Foundations” was organised
+by Donatella Castelli and Edward A. Fox with the collaboration of the ACM
+IEEE Joint Conference on Digital Libraries (JCDL 2007).
+Organising Committee
+Donatella Castelli (Italian National Research Council, ISTI-CNR, Pisa, Italy)
+Edward A. Fox (Virginia Tech, Blacksburg, Virginia, USA)
+Program Committee
+Maristella Agosti (University of Padua, Italy)
+Stavros Christodoulakis (Technical University of Crete, Hellas (Greece))
+Geneva Henry (Rice University, USA)
+Carlo Meghini (Italian National Research Council, ISTI-CNR, Pisa, Italy)
+Heiko Schuldt (University of Basel, Switzerland)
+Dagobert Soergel (University of Maryland – College Park, USA)
+Additional Reviewers
+Leonardo Candela (Italian National Research Council, ISTI-CNR, Pisa, Italy)
