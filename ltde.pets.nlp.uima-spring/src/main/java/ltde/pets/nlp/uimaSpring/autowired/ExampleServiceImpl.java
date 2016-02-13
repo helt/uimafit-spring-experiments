@@ -5,7 +5,8 @@ import org.springframework.stereotype.Service;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Implementation of a spring service. Simply increments a counter each time its only method is called.
+ * Implementation of a spring service. Simply increments a counter each time its only method is
+ * called.
  */
 @Service
 public class ExampleServiceImpl implements ExampleService {

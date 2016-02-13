@@ -7,32 +7,23 @@ import org.apache.uima.collection.CasConsumerDescription;
 import org.apache.uima.collection.CasInitializerDescription;
 import org.apache.uima.collection.CollectionReaderDescription;
 import org.apache.uima.fit.spring.factory.*;
-import org.apache.uima.impl.CompositeResourceFactory_impl;
-import org.apache.uima.impl.UIMAFramework_impl;
 import org.apache.uima.resource.CustomResourceSpecifier;
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextException;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
- *
  * This component makes sure that Apache UIMA is capable to handle @Autowired injection of services
  * and alike within AnalysisEngines etc.
- *
+ * <p>
  * Created by helt on 13.02.2016.
  */
 @Configuration
-public class UimaResourceFactoryRegistrarPostProcessor implements BeanDefinitionRegistryPostProcessor {
+public class UimaResourceFactoryRegistrarPostProcessor implements
+                                                       BeanDefinitionRegistryPostProcessor {
 
   @Override
   public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry)
