@@ -1,4 +1,4 @@
-package ltde.pets.nlp.uimaSpring.autowired;
+package uima;
 
 import org.apache.uima.CompositeResourceFactory;
 import org.apache.uima.UIMAFramework;
