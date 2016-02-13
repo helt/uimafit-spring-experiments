@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 @Retention(value = java.lang.annotation.RetentionPolicy.RUNTIME)
 @Target(value = { java.lang.annotation.ElementType.TYPE })
 @Import({UimaResourceFactoryRegistrarPostProcessor.class})
-public @interface EnableUimaInjections {
+public @interface EnableUimaAutowiring {
 }
