@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * Created by hatieke on 2016-02-11.
+ * Demo AnalysisEngine which private fields are being partially populated by spring and partially by uimafit.
  */
 public class MyAutowiredAnalysisEngine extends JCasAnnotator_ImplBase {
   private static final Logger LOG = LoggerFactory.getLogger(MyAutowiredAnalysisEngine.class);
@@ -30,9 +30,8 @@ public class MyAutowiredAnalysisEngine extends JCasAnnotator_ImplBase {
   @Override
   public void process(JCas aJCas) throws AnalysisEngineProcessException {
     String documentText = aJCas.getDocumentText();
-    LOG.info(srv.get());
-    LOG.info(String.format("AE %s (hash %s) processes cas-id %s with document %s", this
+    LOG.info(String.format("AE %s (hash %s) processes cas-id %s with document '%s'.\nService has been called %s times", this
         .randomNameThatIsNotAmbigue, this.hashCode(), aJCas.hashCode(), documentText.substring(0,
-        Math.min(100, documentText.length()))));
+        Math.min(10, documentText.length())), srv.get()));
   }
 }
